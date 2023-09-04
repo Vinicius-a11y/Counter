@@ -11,7 +11,8 @@ function resetCounter() {
 }
 
 function decrementCounter() {
-    counter--;
+    if(counter > 0)
+        counter--;
     updateCounterView();
 }
 
